@@ -70,11 +70,6 @@ treehome_home/
 ├── tailwind.config.js      # Tailwind 主题配置
 ├── package.json            # npm 配置
 ├── favicon.ico             # 浏览器图标
-├── favicon.svg             # SVG 备用图标
-├── robots.txt              # 爬虫规则
-├── sitemap.xml             # 站点地图
-├── llms.txt                # 大模型导航文件
-├── feed.xml                # RSS 订阅
 └── README.md               # 本文件
 ```
 
@@ -130,6 +125,5 @@ npm run tw:build
 
 ## 📬 联系我们
 
-- 邮箱：nice24@qq.com
 - 微信小程序：小树苗自律成长助手
 - 公众号：小树苗自律成长
