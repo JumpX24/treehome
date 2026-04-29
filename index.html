@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="小树苗自律成长助手">
+    <title>小树苗自律成长助手（小树苗成长） - 儿童自律养成APP | 免费无广告</title>
+    <meta name="description" content="小树苗自律成长助手是一款专为3-12岁孩子设计的自律养成工具。家长自定义任务、习惯、奖励，无广告纯净环境。微信小程序、安卓版免费使用。">
+    <meta name="keywords" content="儿童自律,习惯养成,时间管理,儿童APP,亲子教育,免费自律软件,家庭银行">
+    <meta name="author" content="大树的梦想">
+    <meta property="og:title" content="小树苗自律成长助手（小树苗成长） - 儿童自律养成APP">
+    <meta property="og:description" content="小树苗自律成长助手是一款专为3-12岁孩子设计的自律养成工具。家长自定义任务、习惯、奖励，无广告纯净环境。微信小程序、安卓版免费使用。">
+    <meta property="og:image" content="https://m.treehome.top/public/home/background_h.png">
+    <meta property="og:url" content="https://www.treehome.top/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="小树苗自律成长助手（小树苗成长） - 儿童自律养成APP">
+    <meta name="twitter:description" content="小树苗自律成长助手 - 专为3-12岁孩子设计的免费自律养成工具。">
+    <meta name="baidu-site-verification" content="请替换为你的百度站长验证码">
+    <link rel="canonical" href="https://www.treehome.top/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="css/tailwind.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #FCFAF7;
+            color: #333333;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media (max-width: 768px) {
+            .hero-bg {
+                background-image: url('https://m.treehome.top/public/home/background_s.png');
+            }
+        }
+        @media (min-width: 769px) {
+            .hero-bg {
+                background-image: url('https://m.treehome.top/public/home/background_h.png');
+            }
+        }
+    </style>
+    <!-- 结构化数据 Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "小树苗自律成长助手",
+      "alternateName": "小树苗成长",
+      "description": "专为3-12岁孩子设计的自律养成工具，家长自定义任务、习惯、奖励，无广告纯净环境。",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "Android, WeChat Mini Program",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "大树的梦想"
+      },
+      "softwareVersion": "1.2.0",
+      "downloadUrl": "https://www.treehome.top/install.html",
+      "featureList": "任务墙,习惯养成,计划管理,挑战模式,礼物兑换,奖章系统,家庭银行,成长相册,身高体重记录,计时器"
+    }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- 顶部导航栏（增加导航链接） -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3L12 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M7 8C7 8 9.5 5.5 12 5.5C14.5 5.5 17 8 17 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M6 13C6 13 9 10.5 12 10.5C15 10.5 18 13 18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M5 18C5 18 8.5 15.5 12 15.5C15.5 15.5 19 18 19 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="text-primary font-semibold text-lg">大树的梦想</div>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-dark/70 text-sm">
+                <a href="#core" class="hover:text-primary transition">核心价值</a>
+                <a href="#features" class="hover:text-primary transition">功能展示</a>
+                <a href="faq.html" class="hover:text-primary transition">常见问题</a>
+                <a href="manual.html" class="hover:text-primary transition">使用说明</a>
+                <a href="install.html" class="hover:text-primary transition">安装教程</a>
+                <a href="blog.html" class="hover:text-primary transition">育儿博客</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 第一屏：价值主张（不变，略修改按钮链接） -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat hero-bg">
+            <div class="absolute inset-0 bg-black/15"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 sm:px-6 max-w-3xl">
+            <div class="glass-card rounded-[32px] p-5 sm:p-8 md:p-12 shadow-xl">
+                <p class="text-primary/90 text-base sm:text-lg mb-2">🌱 小树苗自律成长助手（简称小树苗成长）</p>
+                <h1 class="text-[clamp(1.6rem,5vw,3.5rem)] font-bold text-dark mb-4 sm:mb-6 text-balance">
+                    小树苗成长 — 孩子自律，亲子愉悦
+                </h1>
+                <p class="text-[clamp(0.9rem,1.8vw,1.2rem)] text-dark/80 mb-6 max-w-2xl mx-auto">
+                    帮助家长引导孩子自律成长的陪伴工具
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="px-3 py-1.5 bg-primary/10 backdrop-blur-sm rounded-full text-primary text-sm font-medium">教育主权</span>
+                    <span class="px-3 py-1.5 bg-primary/10 backdrop-blur-sm rounded-full text-primary text-sm font-medium">纯净无广告</span>
+                    <span class="px-3 py-1.5 bg-primary/10 backdrop-blur-sm rounded-full text-primary text-sm font-medium">完全免费</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <a href="#core" class="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl font-medium">
+                        了解更多
+                    </a>
+                    <a href="#experience" class="inline-block bg-white text-primary hover:bg-neutral border-2 border-primary px-8 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl font-medium">
+                        立即体验
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-0 right-0 animate-bounce text-center z-10">
+            <p class="text-white text-sm mb-2 drop-shadow">向下滚动，查看更多</p>
+            <svg class="w-6 h-6 text-white mx-auto drop-shadow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 第二屏：核心价值（不变，但id改为core） -->
+    <section id="core" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-dark mb-4">陪孩子搭建自己的自律阶梯</h2>
+                <p class="text-dark/70 max-w-2xl mx-auto">我们只提供框架，教育主权永远由家长掌握</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 教育主权 -->
+                <div class="bg-neutral rounded-[32px] p-8 shadow-sm card-hover fade-in">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-dark">教育主权，你说了算</h3>
+                    </div>
+                    <p class="text-sm text-dark/70">
+                        我们只提供一个自律养成的框架，家长享有100%的自主权来为自己的孩子打造专属的自律空间。所有的规则、所有的礼物、所有的任务，都由家长决定。
+                    </p>
+                </div>
+
+                <!-- 纯净无广告 -->
+                <div class="bg-neutral rounded-[32px] p-8 shadow-sm card-hover fade-in">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-dark">纯净无广告，放心用</h3>
+                    </div>
+                    <p class="text-sm text-dark/70">
+                        子账号独立登录，孩子端永久无广告、无外链、无诱导。家长可以放心的将APP加入手机“青少年模式”白名单。
+                    </p>
+                </div>
+
+                <!-- 阶梯式自律培养 -->
+                <div class="bg-neutral rounded-[32px] p-8 shadow-sm card-hover fade-in">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-dark">阶梯式自律培养</h3>
+                    </div>
+                    <p class="text-sm text-dark/70">
+                        任务、习惯、计划、挑战，四步搭建完整的自律成长阶梯。计划自动生成任务，孩子自己设定开始时间，把“被安排”变成“我做主”，从他律到自律，一步步点燃孩子的内驱力。
+                    </p>
+                </div>
+
+                <!-- 正向激励 -->
+                <div class="bg-neutral rounded-[32px] p-8 shadow-sm card-hover fade-in">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-dark">正向激励，看得见的成长</h3>
+                    </div>
+                    <p class="text-sm text-dark/70">
+                        完成任务、打卡习惯、完成挑战、兑换奖章，都能获得积分。积分可以兑换家长上架的礼物，家长还可以在点评时浮动积分，让孩子明白，“做好”比“做了”更重要，把外部激励，变成内在动力。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第三屏：更多功能展示（id改为features） -->
+    <section id="features" class="py-20 px-6 bg-neutral">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-dark mb-4">更多贴心功能，陪你一起带娃</h2>
+                <p class="text-dark/70 max-w-2xl mx-auto">那些你需要的小细节，我们都帮你做好了</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- 首页看板 -->
+                <div class="flex flex-col items-center gap-6 fade-in">
+                    <div class="phone-frame">
+                        <img src="https://m.treehome.top/public/home/home.png" alt="首页看板" loading="lazy" class="app-img">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-dark mb-2">首页看板，当日事项一目了然</h3>
+                        <p class="text-sm text-dark/70 max-w-md">
+                            孩子打开APP，当天要做的事，一目了然，他自己就知道今天要做什么。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 时间规划 -->
+                <div class="flex flex-col items-center gap-6 fade-in">
+                    <div class="phone-frame">
+                        <img src="https://m.treehome.top/public/home/task.png" alt="时间规划" loading="lazy" class="app-img">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-dark mb-2">时间规划，建立自己的时间观</h3>
+                        <p class="text-sm text-dark/70 max-w-md">
+                            自动根据计划生成的任务，需要孩子自行指定开始时间，引导孩子建立时间观，再也不用你催，他自己就会安排。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 快速计时 -->
+                <div class="flex flex-col items-center gap-6 fade-in">
+                    <div class="phone-frame">
+                        <img src="https://m.treehome.top/public/home/timer.png" alt="快速计时" loading="lazy" class="app-img">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-dark mb-2">快速计时，到点自动提醒</h3>
+                        <p class="text-sm text-dark/70 max-w-md">
+                            应用内提供快速唤起计时的功能，能够在完成计时类任务、使用计时类礼物时快速打开，到点自动提醒，不用你盯着。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 分组授权 -->
+                <div class="flex flex-col items-center gap-6 fade-in">
+                    <div class="phone-frame">
+                        <img src="https://m.treehome.top/public/home/group.png" alt="分组授权" loading="lazy" class="app-img">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-dark mb-2">分组授权，多孩家庭也友好</h3>
+                        <p class="text-sm text-dark/70 max-w-md">
+                            家长可以分组创建礼物、惊喜任务、理财产品、奖章，分别授权给不同的孩子，做到精准施策，多孩家庭也能互不干扰。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 成长记录 -->
+                <div class="flex flex-col items-center gap-6 fade-in">
+                    <div class="phone-frame">
+                        <img src="https://m.treehome.top/public/home/growth_album.png" alt="成长记录" loading="lazy" class="app-img">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-dark mb-2">成长记录，留住每一个瞬间</h3>
+                        <p class="text-sm text-dark/70 max-w-md">
+                            通过照片记录孩子的精彩成长瞬间，随时唤起成长的记忆，那些珍贵的第一次，再也不会丢。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 家庭银行 -->
+                <div class="flex flex-col items-center gap-6 fade-in">
+                    <div class="phone-frame">
+                        <img src="https://m.treehome.top/public/home/bank.png" alt="家庭银行" loading="lazy" class="app-img">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-dark mb-2">家庭银行，财商启蒙从小做</h3>
+                        <p class="text-sm text-dark/70 max-w-md">
+                            银行模拟沙盘，让孩子自己管自己的零花钱和压岁钱，从「收缴」到「共管」，他能看到自己的钱，存定期，赚利息，财商启蒙，就这么简单。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第四屏：体验地址（不变） -->
+    <section id="experience" class="py-20 px-6 bg-primary/90 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-6 fade-in">即刻体验</h2>
+            <p class="text-xl text-white/90 mb-10 fade-in">
+                纯净，免费，没有套路
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-10 fade-in">
+                <div class="bg-white/10 rounded-xl p-4">
+                    <p class="text-white/90 text-sm mb-2 text-center">微信小程序</p>
+                    <div class="w-24 h-24 bg-white/20 rounded-lg flex items-center justify-center">
+                        <img src="https://m.treehome.top/public/app/miniapp.jpg" alt="小程序码" loading="lazy" class="w-full h-full object-cover rounded-lg qr-code" data-fallback="小程序码">
+                        <span class="text-white/70 text-sm hidden qr-fallback">小程序码</span>
+                    </div>
+                </div>
+                <div class="bg-white/10 rounded-xl p-4">
+                    <p class="text-white/90 text-sm mb-2 text-center">安卓APP</p>
+                    <div class="w-24 h-24 bg-white/20 rounded-lg flex items-center justify-center">
+                        <img src="https://m.treehome.top/public/app/android.png" alt="下载码" loading="lazy" class="w-full h-full object-cover rounded-lg qr-code" data-fallback="下载码">
+                        <span class="text-white/70 text-sm hidden qr-fallback">下载码</span>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-6 text-white/80 text-sm">扫描二维码，或在微信搜索“小树苗自律助手”小程序</p>
+        </div>
+    </section>
+
+    <!-- 底部（增加导航链接） -->
+    <footer class="py-12 px-6 bg-primary text-white/80 text-center">
+        <p class="max-w-3xl mx-auto leading-relaxed mb-6">
+            来自一位父亲为女儿打造的专属成长工具，希望帮助更多孩子们更好的成长。
+        </p>
+        <div class="flex flex-wrap justify-center gap-6 text-sm mb-6">
+            <a href="faq.html" class="hover:text-white transition">常见问题</a>
+            <a href="manual.html" class="hover:text-white transition">使用说明</a>
+            <a href="install.html" class="hover:text-white transition">安装教程</a>
+            <a href="blog.html" class="hover:text-white transition">育儿博客</a>
+            <a href="mailto:nice24@qq.com" class="hover:text-white transition">联系我们</a>
+        </div>
+        <p>© 2026 大树的梦想 · 小树苗成长（原小树苗自律成长助手）</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm text-white/60">
+            <span>ICP备案号：蜀ICP备2026014202号-1</span>
+            <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51012202002327" rel="nofollow noopener noreferrer" target="_blank" class="flex items-center gap-1">
+                <img src="备案图标.png" alt="网安备案图标" loading="lazy" class="w-4 h-4">
+                川公网安备51012202002327号
+            </a>
+        </div>
+        
+    </footer>
+    
+    <script>
+    (function(){
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+
+    <script>
+        // 淡入动画
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+
+            // 处理二维码图片加载失败
+            const qrCodes = document.querySelectorAll('.qr-code');
+            qrCodes.forEach(img => {
+                img.onerror = function() {
+                    this.style.display = 'none';
+                    const fallback = this.nextElementSibling;
+                    if (fallback && fallback.classList.contains('qr-fallback')) {
+                        fallback.classList.remove('hidden');
+                    }
+                };
+            });
+        });
+    </script>
+</body>
+</html>

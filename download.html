@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="application-name" content="小树苗自律成长助手">
+    <title>小树苗成长 - 安卓APP免费下载 | 小树苗自律成长助手</title>
+    <meta name="description" content="小树苗自律成长助手（小树苗成长）安卓版免费下载，帮助3-12岁孩子养成自律好习惯。家长自定义任务、习惯、奖励，纯净无广告。">
+    <meta name="baidu-site-verification" content="请替换为你的百度站长验证码">
+    <link rel="canonical" href="https://www.treehome.top/download.html">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta property="og:title" content="小树苗成长 - 安卓APP免费下载 | 小树苗自律成长助手">
+    <meta property="og:description" content="小树苗自律成长助手（小树苗成长）安卓版免费下载，帮助3-12岁孩子养成自律好习惯。">
+    <meta property="og:image" content="https://m.treehome.top/public/app/android.png">
+    <meta property="og:url" content="https://www.treehome.top/download.html">
+    <meta property="og:type" content="website">
+    <link href="css/tailwind.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "小树苗自律成长助手",
+      "alternateName": "小树苗成长",
+      "description": "小树苗自律成长助手（小树苗成长）安卓版免费下载，帮助3-12岁孩子养成自律好习惯。",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+      "downloadUrl": "https://m.treehome.top/public/app/release/babytree_v1.apk",
+      "author": { "@type": "Person", "name": "大树的梦想" }
+    }
+    </script>
+    <style>
+        body {
+            background-color: #FCFAF7;
+        }
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: #4F7A6B;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- 简单导航（与官网一致） -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3L12 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M7 8C7 8 9.5 5.5 12 5.5C14.5 5.5 17 8 17 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M6 13C6 13 9 10.5 12 10.5C15 10.5 18 13 18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M5 18C5 18 8.5 15.5 12 15.5C15.5 15.5 19 18 19 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="text-primary font-semibold text-lg">大树的梦想</div>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-dark/70 text-sm">
+                <a href="index.html#core" class="hover:text-primary transition">核心价值</a>
+                <a href="index.html#features" class="hover:text-primary transition">功能展示</a>
+                <a href="faq.html" class="hover:text-primary transition">常见问题</a>
+                <a href="manual.html" class="hover:text-primary transition">使用说明</a>
+                <a href="install.html" class="hover:text-primary transition">安装教程</a>
+                <a href="blog.html" class="text-primary font-medium">育儿博客</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区：动态显示下载面板 -->
+    <div class="max-w-3xl mx-auto px-6 py-12 md:py-16">
+        <!-- 标题区域 -->
+        <div class="text-center mb-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">小树苗自律成长助手-APP下载</h1>
+            <p class="text-dark/70 text-lg">免费 · 纯净 · 无广告</p>
+        </div>
+
+        <!-- 动态下载卡片 -->
+        <div id="downloadPanel" class="bg-white rounded-2xl shadow-md overflow-hidden">
+            <!-- 默认显示加载中，稍后由js替换 -->
+            <div class="p-8 text-center text-dark/60">加载中...</div>
+        </div>
+
+        <!-- 备用说明（如果js禁用） -->
+        <noscript>
+            <div class="bg-white rounded-2xl shadow-md p-8 text-center">
+                <div class="text-5xl mb-4">⬇️</div>
+                <h2 class="text-2xl font-bold text-dark mb-2">下载小树苗成长APP</h2>
+                <p class="text-dark/80 mb-4">您的浏览器不支持JavaScript，请直接点击下方按钮下载APK：</p>
+                <a href="https://m.treehome.top/public/app/release/babytree_v1.apk" class="inline-block bg-primary text-white px-8 py-3 rounded-full text-lg font-medium shadow-md hover:bg-primary/90 transition">下载安卓APP</a>
+                <div class="mt-6 p-4 bg-secondary rounded-xl text-left text-sm text-dark/80">
+                    <p class="font-medium mb-2">⚠️ 安装提示</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>下载完成后，如果提示"禁止安装未知来源应用"，请前往手机「设置」→「安全」→ 允许"允许安装未知应用"。</li>
+                        <li>安装完成后，建议关闭该权限以保持手机安全。</li>
+                        <li>如果在下载或安装过程中遇到问题，请查看<a href="install.html" class="text-primary underline">详细安装教程</a>。</li>
+                    </ul>
+                </div>
+                <div class="mt-6 text-sm text-dark/50">文件大小约 42MB，建议在Wi-Fi环境下下载</div>
+            </div>
+        </noscript>
+    </div>
+
+    <!-- 底部（与官网一致） -->
+    <footer class="py-8 px-6 bg-primary text-white/80 text-center text-sm">
+        <div class="flex flex-wrap justify-center gap-6 text-sm mb-6">
+            <a href="index.html" class="hover:text-white">首页</a>
+            <a href="faq.html" class="hover:text-white transition">常见问题</a>
+            <a href="manual.html" class="hover:text-white transition">使用说明</a>
+            <a href="install.html" class="hover:text-white transition">安装教程</a>
+            <a href="blog.html" class="hover:text-white transition">育儿博客</a>
+        </div>
+        <p>© 2026 大树的梦想 · 小树苗成长（原小树苗自律成长助手）</p>
+    </footer>
+
+    <script>
+    (function(){
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+
+    <script>
+        (function() {
+            // 检测是否为微信浏览器
+            function isWechat() {
+                var ua = navigator.userAgent.toLowerCase();
+                return ua.indexOf('micromessenger') !== -1;
+            }
+
+            // 获取页面中用于显示面板的容器
+            var panel = document.getElementById('downloadPanel');
+            if (!panel) return;
+
+            // 定义APK下载链接（请替换为实际地址）
+            var apkUrl = 'https://m.treehome.top/public/app/release/babytree_v1.apk';
+
+            // 如果是在微信中
+            if (isWechat()) {
+                // 显示引导提示：请使用浏览器打开
+                panel.innerHTML = `
+                    <div class="p-8 text-center">
+                        <div class="text-6xl mb-4">📱</div>
+                        <h2 class="text-xl font-semibold text-dark mb-3">请在浏览器中打开</h2>
+                        <p class="text-dark/70 mb-6">
+                            检测到您正在微信内浏览，为了保护您的隐私安全，请点击右上角菜单选择「在浏览器中打开」即可正常下载。
+                        </p>
+                        <div class="bg-secondary rounded-xl p-4 text-left text-sm text-dark/80">
+                            <p class="font-medium mb-2">📌 操作步骤：</p>
+                            <ol class="list-decimal list-inside space-y-1">
+                                <li>点击页面右上角的 <span class="inline-block px-1 bg-white/40 rounded">⋯</span> 菜单按钮</li>
+                                <li>选择「在浏览器中打开」</li>
+                                <li>在浏览器中再次打开本页面，即可看到下载按钮</li>
+                            </ol>
+                        </div>
+                        <div class="mt-8 text-xs text-dark/50">
+                            如果您已在浏览器中打开但仍看到此提示，请刷新页面。
+                        </div>
+                    </div>
+                `;
+            } else {
+                // 非微信环境：显示下载按钮 + 安装提示
+                panel.innerHTML = `
+                    <div class="p-8 text-center">
+                        <div class="text-5xl mb-4">⬇️</div>
+                        <h2 class="text-2xl font-bold text-dark mb-2">准备下载</h2>
+                        <p class="text-dark/70 mb-6">点击下方按钮即可下载最新版APK安装包</p>
+                        <a href="${apkUrl}" class="inline-block bg-primary text-white px-8 py-3 rounded-full text-lg font-medium shadow-md hover:bg-primary/90 transition transform hover:scale-105" id="directDownloadBtn">
+                            下载小树苗成长APP
+                        </a>
+                        <div class="mt-8 p-4 bg-secondary rounded-xl text-left text-sm text-dark/80">
+                            <p class="font-medium mb-2">⚠️ 安装提示</p>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>下载完成后，如果提示“禁止安装未知来源应用”，请前往手机「设置」→「安全」→ 允许“允许安装未知应用”。</li>
+                                <li>安装完成后，建议关闭该权限以保持手机安全。</li>
+                                <li>如果在下载或安装过程中遇到问题，请查看<a href="/install.html" class="text-primary underline">详细安装教程</a>。</li>
+                            </ul>
+                        </div>
+                        <div class="mt-6 text-sm text-dark/50">
+                            文件大小约 42MB，建议在Wi-Fi环境下下载
+                        </div>
+                    </div>
+                `;
+                // 可选：增加下载点击统计（如果需要）
+                var downloadBtn = document.getElementById('directDownloadBtn');
+                if (downloadBtn) {
+                    downloadBtn.addEventListener('click', function(e) {
+                        // 可以在这里添加自定义统计代码，例如百度统计
+                        console.log('APK 下载按钮被点击');
+                    });
+                }
+            }
+        })();
+    </script>
+</body>
+</html>

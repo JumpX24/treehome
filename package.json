@@ -1,0 +1,21 @@
+{
+  "name": "treehome_home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/xiaolin2021/treehome_home.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.12",
+    "tailwindcss": "^3.4.19"
+  }
+}

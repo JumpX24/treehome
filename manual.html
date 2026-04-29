@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="小树苗自律成长助手">
+    <title>小树苗成长 - 用户使用说明书 | 小树苗自律成长助手</title>
+    <meta name="description" content="小树苗自律成长助手（小树苗成长）完整使用说明书：从快速入门到核心功能（任务墙、习惯打卡、家庭银行、奖章系统、多孩管理）的详细图文教程。">
+    <meta name="keywords" content="小树苗成长,小树苗自律成长助手,使用教程,任务墙,习惯打卡,家庭银行,奖章系统,多孩管理,儿童自律">
+    <meta name="author" content="大树的梦想">
+    <link rel="canonical" href="https://www.treehome.top/manual.html">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="css/tailwind.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "小树苗自律成长助手",
+      "alternateName": "小树苗成长",
+      "url": "https://www.treehome.top/",
+      "documentation": "https://www.treehome.top/manual.html",
+      "description": "专为3-12岁孩子设计的自律养成工具，家长自定义任务、习惯、奖励，无广告纯净环境。",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "Android, WeChat Mini Program",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+      "author": { "@type": "Person", "name": "大树的梦想" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "小树苗成长 用户使用说明书",
+      "description": "小树苗自律成长助手完整使用说明书，涵盖产品简介、核心功能、操作指南等",
+      "author": { "@type": "Person", "name": "大树的梦想" },
+      "about": { "@type": "Thing", "name": "儿童自律养成工具使用教程" }
+    }
+    </script>
+    <style>
+        body { background-color: #FCFAF7; color: #333333; }
+        .manual-content { max-width: 800px; margin: 0 auto; line-height: 1.8; }
+        .manual-content h1 { font-size: 1.875rem; font-weight: 700; margin: 2.5rem 0 1rem; color: #333; }
+        .manual-content h2 { font-size: 1.5rem; font-weight: 700; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #4F7A6B; color: #4F7A6B; }
+        .manual-content h3 { font-size: 1.25rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: #333; }
+        .manual-content h4 { font-size: 1.1rem; font-weight: 600; margin: 1.25rem 0 0.5rem; color: #4a5568; }
+        .manual-content p { margin-bottom: 1rem; color: #4a5568; }
+        .manual-content ul, .manual-content ol { margin: 0.75rem 0 1.25rem 1.5rem; }
+        .manual-content li { margin-bottom: 0.35rem; color: #4a5568; }
+        .manual-content strong { color: #333; font-weight: 600; }
+        .manual-content blockquote { border-left: 4px solid #4F7A6B; background: #f0fdf4; padding: 1rem 1.25rem; margin: 1.25rem 0; border-radius: 0 0.5rem 0.5rem 0; color: #4a5568; }
+        .manual-content table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.9rem; }
+        .manual-content th { background: #4F7A6B; color: white; padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; }
+        .manual-content td { padding: 0.5rem 0.75rem; border-bottom: 1px solid #e2e8f0; color: #4a5568; }
+        .manual-content tr:nth-child(even) td { background: #faf7f3; }
+        .manual-content code { background: #f3efe6; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.9em; color: #4F7A6B; }
+        .manual-content pre { background: #1e293b; color: #e2e8f0; padding: 1rem 1.25rem; border-radius: 0.75rem; overflow-x: auto; margin: 1rem 0 1.5rem; font-size: 0.875rem; line-height: 1.6; }
+        .manual-content hr { border: none; border-top: 3px dashed #4F7A6B; margin: 2.5rem 0; opacity: 0.3; }
+        .manual-content .summary-box { background: #f0fdf4; border: 1px solid #4F7A6B; border-radius: 1rem; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+        .manual-content .summary-box p { margin-bottom: 0.25rem; }
+        .manual-content a { color: #4F7A6B; text-decoration: underline; }
+        .manual-content a:hover { color: #3d6356; }
+        .toc { background: #fff; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.5rem 2rem; margin: 1.5rem 0 2.5rem; }
+        .toc h2 { border: none; margin-top: 0; padding-top: 0; }
+        .toc ol { counter-reset: item; list-style: none; padding-left: 0; }
+        .toc ol > li { counter-increment: item; margin-bottom: 0.4rem; }
+        .toc ol > li::before { content: counters(item, ".") ". "; color: #4F7A6B; font-weight: 600; }
+        .toc ol ol { padding-left: 1.5rem; margin-top: 0.25rem; counter-reset: subitem; }
+        .toc ol ol > li { counter-increment: subitem; }
+        .toc ol ol > li::before { content: counter(item) "." counters(subitem, "") " "; }
+        .manual-nav { position: sticky; top: 0; z-index: 40; background: white; border-bottom: 1px solid #e2e8f0; padding: 0.5rem 1rem; }
+        .manual-nav a { color: #4F7A6B; text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 0.25rem 0.5rem; border-radius: 4px; }
+        .manual-nav a:hover { background: #f0fdf4; }
+        .sidenav { position: fixed; top: 80px; left: 0; width: 220px; max-height: calc(100vh - 100px); overflow-y: auto; padding: 1rem 0.75rem; display: none; }
+        .sidenav a { display: block; font-size: 0.8rem; color: #666; padding: 0.25rem 0.5rem; border-radius: 4px; text-decoration: none; }
+        .sidenav a:hover { background: #f0fdf4; color: #4F7A6B; }
+        .sidenav .h2-link { font-weight: 600; color: #333; margin-top: 0.5rem; }
+        .sidenav .h3-link { padding-left: 1rem; }
+        @media (min-width: 1200px) { .sidenav { display: block; } }
+        @media (max-width: 768px) { .manual-content { font-size: 0.95rem; } .manual-content table { font-size: 0.8rem; } .manual-content pre { font-size: 0.8rem; } }
+        .manual-content .diagram { background: #f8f6f3; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.25rem; margin: 1rem 0; white-space: pre; font-family: monospace; font-size: 0.85rem; line-height: 1.5; overflow-x: auto; color: #333; }
+    </style>
+</head>
+<body class="font-sans">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3L12 21" stroke-width="2"/><path d="M7 8C7 8 9.5 5.5 12 5.5C14.5 5.5 17 8 17 8"/><path d="M6 13C6 13 9 10.5 12 10.5C15 10.5 18 13 18 13"/><path d="M5 18C5 18 8.5 15.5 12 15.5C15.5 15.5 19 18 19 18"/></svg>
+                <div class="text-primary font-semibold text-lg">大树的梦想</div>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-dark/70 text-sm">
+                <a href="index.html#core" class="hover:text-primary transition">核心价值</a>
+                <a href="index.html#features" class="hover:text-primary transition">功能展示</a>
+                <a href="faq.html" class="hover:text-primary transition">常见问题</a>
+                <a href="manual.html" class="text-primary font-medium">使用说明</a>
+                <a href="install.html" class="hover:text-primary transition">安装教程</a>
+                <a href="blog.html" class="hover:text-primary transition">育儿博客</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-24 pb-16 px-6">
+        <div class="manual-content">
+            <div class="text-center mb-8">
+                <p class="text-primary font-medium text-sm mb-2">🌱 小树苗自律成长助手（简称小树苗成长）</p>
+                <h1 class="text-3xl md:text-4xl font-bold text-dark mb-3">用户使用说明书</h1>
+                <p class="text-dark/60 text-sm">版本 1.0.0 · 更新于 2026年</p>
+            </div>
+
+            <div class="summary-box">
+                <p><strong>一句话总结</strong>：小树苗自律成长助手是一款面向3-12岁家庭的数字化教育辅助工具，通过<strong>任务墙、习惯打卡、家庭银行、奖章系统</strong>四大模块，帮助孩子建立自律习惯。家长拥有100%教育主权，纯净无广告，完全免费。支持微信小程序和安卓APP。</p>
+            </div>
+
+            <div class="toc">
+                <h2>目录</h2>
+                <ol>
+                    <li>产品简介</li>
+                    <li>三大核心理念</li>
+                    <li>快速入门</li>
+                    <li>任务、计划、目标——时间管理闭环</li>
+                    <li>首页——全局总览与快速操作</li>
+                    <li>任务、习惯、奖章、挑战——四大行为引导功能</li>
+                    <li>积分与奖章——正向激励机制</li>
+                    <li>奖章系统详解</li>
+                    <li>礼物系统——积分消费的目标</li>
+                    <li>我的页面——个人信息与功能入口</li>
+                    <li>成长屋——成长辅助工具箱</li>
+                    <li>多孩管理与数据隔离</li>
+                    <li>家长与孩子端协同使用指南</li>
+                    <li>功能速查表</li>
+                    <li>温馨提示</li>
+                </ol>
+            </div>
+
+            <hr>
+
+            <h2 id="part1">第一篇 初识APP</h2>
+
+            <h3 id="chap1">第一章 产品简介</h3>
+            <p><strong>小树苗自律成长助手（简称小树苗成长）</strong> 是一款专为家庭设计的数字化教育辅助工具，致力于培养孩子的自律习惯，增进亲子互动体验。</p>
+            <p>本产品支持微信小程序和安卓手机双端运行，家长可通过微信随时管理孩子的学习、生活安排，孩子则可通过独立账号在安卓设备上查看和完成任务。</p>
+            <ul>
+                <li><strong>官网地址</strong>：<a href="https://www.treehome.top">https://www.treehome.top</a></li>
+                <li><strong>微信小程序</strong>：小树苗自律成长助手</li>
+                <li><strong>公众号</strong>：小树苗自律成长</li>
+                <li><strong>安卓APP</strong>：官网下载</li>
+            </ul>
+
+            <h3 id="chap2">第二章 三大核心理念</h3>
+            <h4>2.1 纯净空间，无广告干扰</h4>
+            <p>我们郑重承诺：APP内永不植入任何广告，不接入任何广告联盟。孩子使用的每一分钟，都是纯净、安全、专注的成长时光。</p>
+            <h4>2.2 家长教育主权，数据完全自主</h4>
+            <p>APP只提供框架和能力，所有数据（包括任务、习惯、积分、财务等）均由家长全权掌控和配置，确保教育方式完全符合您的家庭理念。</p>
+            <h4>2.3 多孩数据隔离，因材施教</h4>
+            <p>针对不同年龄段的孩子，APP支持按孩子分组管理。每个孩子拥有独立的任务、积分、习惯、成长记录等数据，互不干扰。大宝可以完成更复杂的挑战，二宝则从基础习惯开始培养——真正实现因材施教。</p>
+
+            <h3 id="chap3">第三章 快速入门</h3>
+            <h4>3.1 获取账号</h4>
+            <ul>
+                <li><strong>家长端</strong>：通过微信搜索小程序，点击「微信一键登录」即可（首次需绑定手机号）</li>
+                <li><strong>孩子端</strong>：由家长在APP内创建子账号，将账号名和密码告知孩子后登录使用</li>
+            </ul>
+            <h4>3.2 添加孩子</h4>
+            <p>登录后进入「我的」页面 → 点击「家长功能」下的「我的孩子」→ 点击右下角「+添加孩子」：</p>
+            <ul>
+                <li><strong>手动添加</strong>：填写孩子姓名、性别、出生日期等信息</li>
+                <li><strong>扫码绑定</strong>：另一台设备上已登录的家长可通过扫码方式共享孩子数据（如多位家长共同管理）</li>
+            </ul>
+            <h4>3.3 为孩子创建子账号</h4>
+            <ol>
+                <li>进入「我的」→「家长功能」→「孩子账号」</li>
+                <li>点击「添加账号」，填写账号名和密码</li>
+                <li>选择要关联的孩子（一个账号只能关联一个孩子，关联后该账号登录后只能看到对应孩子的数据）</li>
+                <li>将账号名和密码告知孩子，孩子即可在安卓APP端登录</li>
+            </ol>
+            <h4>3.4 主界面导航</h4>
+            <p>APP底部设有四个导航标签：</p>
+            <table>
+                <thead><tr><th>导航</th><th>说明</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>首页</strong></td><td>全局总览，显示积分概览、任务进度、习惯与挑战状态</td></tr>
+                    <tr><td><strong>任务墙</strong></td><td>按日期查看和管理任务列表</td></tr>
+                    <tr><td><strong>成长屋</strong></td><td>成长辅助工具（家庭银行、成长相册、计时器等）</td></tr>
+                    <tr><td><strong>我的</strong></td><td>个人信息与功能入口，包含通用功能和家长功能</td></tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h2 id="part2">第二篇 核心功能体系</h2>
+
+            <h3 id="chap4">第四章 任务、计划、目标——时间管理闭环</h3>
+            <blockquote>本章是APP的核心体系：任务、计划、目标三者相互关联，形成完整的时间管理闭环，帮助孩子建立时间观念、培养自律习惯。</blockquote>
+
+            <h4>4.1 三者的关系</h4>
+            <div class="diagram">计划（规则设定） → 自动生成 → 任务（每日执行） → 累计统计 → 目标（周期结算）</div>
+            <table>
+                <thead><tr><th>功能</th><th>定位</th><th>作用</th><th>执行者</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>计划</strong></td><td>长期规则</td><td>设定孩子应该每天/每周做什么</td><td>家长配置，系统自动生成任务</td></tr>
+                    <tr><td><strong>任务</strong></td><td>每日执行</td><td>具体到某一天需要完成的事项</td><td>孩子查看并执行</td></tr>
+                    <tr><td><strong>目标</strong></td><td>周期考核</td><td>设定一周/一月要完成多少任务</td><td>系统自动统计并结算</td></tr>
+                </tbody>
+            </table>
+
+            <h4>4.2 计划——自动生成每日任务</h4>
+            <p>计划是用于<strong>长期、规律性安排</strong>的功能，适用于每天都要做的事。</p>
+            <p><strong>如何创建计划</strong>：</p>
+            <ul>
+                <li>设置计划名称（如"每日阅读"、"每天运动30分钟"）</li>
+                <li>选择循环周期（每天/每周指定星期几）</li>
+                <li>设置计划起止日期（如"9月1日～1月31日"覆盖整个学期）</li>
+                <li>设置任务内容和完成后的积分奖励</li>
+                <li>支持随时暂停、恢复或结束计划</li>
+            </ul>
+            <p><strong>计划如何工作</strong>：</p>
+            <ul>
+                <li>后台每天自动根据计划生成当日任务</li>
+                <li>计划生成的任务<strong>没有固定的开始时间</strong></li>
+                <li>孩子需要在任务墙中自行安排任务的开始时间</li>
+                <li><strong>设计目的</strong>：引导孩子自主进行时间规划，培养时间观念</li>
+            </ul>
+
+            <h4>4.3 任务墙——每日任务执行</h4>
+            <p>任务墙是按时间轴展示任务的核心页面，帮助家长和孩子清晰规划每日安排。</p>
+            <p><strong>任务来源</strong>：</p>
+            <ul>
+                <li>家长或者孩子手动创建的任务</li>
+                <li>计划自动生成的任务</li>
+                <li>惊喜任务（特殊隐藏任务，由家长设置后自动随机生成）</li>
+            </ul>
+            <p><strong>任务状态</strong>：</p>
+            <table>
+                <thead><tr><th>状态</th><th>显示</th><th>说明</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>进行中</strong></td><td>橙色</td><td>尚未完成，可点击"去完成"</td></tr>
+                    <tr><td><strong>已完成</strong></td><td>绿色</td><td>任务完成待家长点评</td></tr>
+                    <tr><td><strong>已超时</strong></td><td>红色</td><td>任务超过完成时限</td></tr>
+                    <tr><td><strong>已取消</strong></td><td>灰色</td><td>任务被取消</td></tr>
+                </tbody>
+            </table>
+            <p><strong>任务操作</strong>：</p>
+            <ul>
+                <li><strong>完成任务</strong>：孩子点击"去完成"，可上传截图/照片、填写完成说明，完成任务提交后就立即获得任务积分</li>
+                <li><strong>任务点评</strong>（家长）：孩子完成后，家长可以进行评价（赞或踩）、填写意见，点评时可对孩子获得的积分进行浮动</li>
+                <li><strong>任务延期</strong>：将任务延期到后续日期，需填写理由</li>
+                <li><strong>任务计时</strong>：点击沙漏图标启动计时器，支持全屏或悬浮窗模式</li>
+                <li><strong>修改时间</strong>：点击任务左侧时间区域，调整开始时间</li>
+            </ul>
+
+            <h4>4.4 目标——周期性任务考核</h4>
+            <p>目标是对孩子<strong>每日任务完成数量</strong>的周期性考核，按自然周或自然月进行设置。</p>
+            <p><strong>如何设置目标</strong>：</p>
+            <ul>
+                <li><strong>周目标</strong>：设定一个自然周内需要完成的任务总数</li>
+                <li><strong>月目标</strong>：设定一个自然月内需要完成的任务总数</li>
+                <li>系统按自然周/自然月自动计算截止日期</li>
+                <li>首页进度条实时显示完成情况</li>
+            </ul>
+            <p><strong>目标结算机制</strong>：后台每天自动统计完成情况，截止期限到达时系统自动结算——完成目标获得积分奖励，未达成则自动扣除预设积分（这是整个APP中唯一自动扣分的场景）。</p>
+
+            <h4>4.5 完整使用示例</h4>
+            <div class="diagram">家长在学期初设置：
+
+  第一步：创建计划
+    计划名："每日阅读"
+    循环周期：每天  有效期：9月1日～1月31日
+    奖励：系统默认计划单次奖励积分为2积分
+
+  第二步：计划每天自动生成任务
+    → 每天0点，系统在孩子任务墙生成一条"每日阅读"任务
+    → 该任务无固定开始时间，孩子自行安排何时阅读
+
+  第三步：孩子执行任务
+    → 孩子查看任务墙，安排阅读时间
+    → 阅读完成后点击"去完成"，上传阅读照片
+    → 家长点评
+
+  第四步：设置周目标
+    目标名："本周目标"  数量：20个任务
+    周期：本自然周（周一～周日）
+    完成奖励：50积分，未完成扣分：20积分
+
+  第五步：周末自动结算
+    → 系统统计本周完成25个任务，超出目标
+    → 孩子获得目标奖励50积分 + 各任务积分
+    → 播放庆祝动画</div>
+
+            <h3 id="chap5">第五章 首页——全局总览与快速操作</h3>
+            <p>首页是您每次打开APP后看到的第一个页面，它以孩子为维度展示全局信息。</p>
+            <h4>5.1 顶部孩子信息栏</h4>
+            <ul>
+                <li><strong>孩子头像与姓名</strong>：显示当前选中的孩子信息，点击头像可查看孩子详细资料</li>
+                <li><strong>孩子切换</strong>：点击孩子姓名右侧的「切换」图标，可在多个孩子之间快速切换</li>
+                <li><strong>等级标识</strong>：显示孩子的当前等级（星星→月亮→太阳→皇冠，逐级提升）</li>
+                <li><strong>端类型标识</strong>：显示当前是「家长端」还是「孩子端」</li>
+            </ul>
+            <h4>5.2 概览区域（三张卡片）</h4>
+            <table>
+                <thead><tr><th>卡片</th><th>内容</th><th>跳转功能</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>兑礼物</strong></td><td>显示当前孩子的可用积分余额</td><td>点击跳转礼物兑换页</td></tr>
+                    <tr><td><strong>领奖章</strong></td><td>显示当前可领取的奖章种类数</td><td>点击跳转奖章领取页</td></tr>
+                    <tr><td><strong>做任务</strong></td><td>显示今日任务总数，右上角红角标显示未完成数量</td><td>点击跳转任务墙</td></tr>
+                </tbody>
+            </table>
+            <h4>5.3 快速添加区</h4>
+            <p>一键创建新功能，快速入口包括：任务、习惯、计划、挑战、照片。</p>
+            <h4>5.4 任务目标进度</h4>
+            <p>显示当前孩子本周/本月的任务目标完成情况，进度条实时更新。</p>
+
+            <h3 id="chap6">第六章 任务、习惯、奖章、挑战——四大行为引导功能</h3>
+            <blockquote>设计理念：任务、习惯、奖章三者在功能上有一定重叠，但各自侧重点不同，解决不同的教育场景问题。</blockquote>
+
+            <h4>6.1 三大功能定位对比</h4>
+            <table>
+                <thead><tr><th>功能</th><th>核心定位</th><th>时间维度</th><th>完成方式</th><th>典型场景</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>任务</strong></td><td>每日时间规划</td><td>当天具体时段</td><td>设置开始时间，提交详情</td><td>"下午3点做数学作业"</td></tr>
+                    <tr><td><strong>习惯</strong></td><td>日常行为养成</td><td>周期性（每天/指定天数）</td><td>简单打卡，不限时间</td><td>"每天喝8杯水"</td></tr>
+                    <tr><td><strong>奖章</strong></td><td>行为方向引导</td><td>无时间限制</td><td>自主完成后领取</td><td>"跟妈妈分享一件趣事"</td></tr>
+                </tbody>
+            </table>
+
+            <h4>6.2 任务——每日时间规划</h4>
+            <p>核心定位：帮助孩子认识时间、规划时间、管理时间。采用<strong>时间轴</strong>方式进行排版，直观展示一天的任务安排。计划生成的任务<strong>没有固定开始时间</strong>，需要孩子自己设置开始时间，引导孩子思考"我该什么时候做这件事？"</p>
+
+            <h4>6.3 习惯——简单打卡培养日常行为</h4>
+            <p>核心定位：以最简单的方式培养孩子的规律性日常行为。通过<strong>打卡</strong>进行提交，操作比任务更简单，<strong>不限制开始时间</strong>，打卡记录以<strong>日历形式</strong>展示，直观看到坚持情况。</p>
+
+            <h4>6.4 奖章——引导孩子"有事可做"</h4>
+            <p>核心定位：引导孩子知道有什么事可以做，解决"无聊"和"不知道做什么"的问题。奖章列表就像一份<strong>"可以做的事"的清单</strong>，孩子无聊时可以来看看。侧重于<strong>品格培养和社交能力</strong>的培养。</p>
+            <p><strong>典型场景</strong>："向爸爸妈妈分享一件趣事"、"完整地表达自己的情绪"、"跟弟弟分享一个玩具"、"帮助家里做一件家务"、"和其他小朋友和好"。</p>
+
+            <h4>6.5 挑战——阶段性目标突破</h4>
+            <p>挑战用于设定<strong>阶段性的、有一定难度的目标</strong>，如假期专项训练、学习突破等。家长发起挑战，孩子在截止日期前完成，家长收到通知后进行点评。</p>
+
+            <h3 id="chap7">第七章 积分与奖章——正向激励机制</h3>
+            <p>积分是整个APP的核心激励机制，贯穿任务、习惯、挑战、奖章等所有环节。APP以<strong>正向鼓励和引导为主</strong>，不强调扣分和处罚。</p>
+            <h4>7.1 积分的获取</h4>
+            <table>
+                <thead><tr><th>积分来源</th><th>说明</th></tr></thead>
+                <tbody>
+                    <tr><td>完成任务</td><td>完成家长设置的任务，根据设定获得积分</td></tr>
+                    <tr><td>习惯打卡</td><td>每日坚持习惯打卡，按设定获得积分</td></tr>
+                    <tr><td>完成挑战</td><td>完成家长发起的挑战，获得额外积分奖励</td></tr>
+                    <tr><td>领取奖章</td><td>领取家长配置的奖章，获得相应积分</td></tr>
+                    <tr><td>添加成长相册</td><td>在成长相册中添加照片记录后获得积分</td></tr>
+                    <tr><td>完成目标</td><td>完成周目标或月目标后获得积分奖励</td></tr>
+                </tbody>
+            </table>
+            <h4>7.2 等级体系</h4>
+            <p>孩子的积分累计到一定程度会自动升级：星星→月亮→太阳→皇冠。家长可自定义每个等级的名称、所需积分。</p>
+            <h4>7.3 积分的使用</h4>
+            <p>积分可用于兑换家长设置的礼物。进入首页「兑礼物」查看可用积分，选择礼物兑换消耗积分。</p>
+            <h4>7.4 正向鼓励原则</h4>
+            <p>整个APP以正向鼓励和引导为主，<strong>唯一自动扣分场景</strong>是任务目标未达成时系统自动扣除预设积分，无其他处罚措施。</p>
+
+            <h3 id="chap8">第八章 奖章系统详解</h3>
+            <p>奖章是<strong>行为方向引导</strong>工具，代表孩子在某方面的成就和认可。领取奖章可以为孩子增加积分（奖章是加分项，不是消耗积分）。</p>
+            <p><strong>家长配置奖章</strong>：进入「我的」→「奖章管理」→ 创建奖章组 → 添加单个奖章，设置名称、描述、可获得积分、可领取次数上限、授权孩子。</p>
+            <p><strong>孩子领取奖章</strong>：进入首页「领奖章」→ 浏览可领取的奖章卡片 → 点击领取，获得积分。</p>
+
+            <h4>奖章与礼物的区别</h4>
+            <table>
+                <thead><tr><th>对比项</th><th>奖章</th><th>礼物</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>积分关系</strong></td><td>领取后<strong>获得</strong>积分</td><td>兑换时<strong>消耗</strong>积分</td></tr>
+                    <tr><td><strong>本质</strong></td><td>荣誉认可 + 积分奖励</td><td>积分消费的目标</td></tr>
+                    <tr><td><strong>目的</strong></td><td>肯定孩子的成就</td><td>激励孩子努力赚取积分</td></tr>
+                </tbody>
+            </table>
+
+            <h3 id="chap9">第九章 礼物系统——积分消费的目标</h3>
+            <p><strong>家长管理礼物</strong>：创建礼物分组（如"电子产品"、"玩具"等），设置每个分组对不同孩子的授权，添加单个礼物设置所需积分、兑换次数上限、礼物类型和使用有效期。</p>
+            <p><strong>孩子兑换礼物</strong>：进入首页「兑礼物」→ 浏览礼物列表 → 选择兑换消耗积分 → 在「使用」标签中查看已兑换但未使用的礼物。</p>
+
+            <hr>
+
+            <h2 id="part3">第三篇 我的页面与辅助功能</h2>
+
+            <h3 id="chap10">第十章 我的页面——个人信息与功能入口</h3>
+            <p>「我的」页面是个人信息与功能入口页面。顶部提供四个快捷入口：目标、计划、习惯、挑战。</p>
+            <h4>家长功能（仅家长可见）</h4>
+            <ul>
+                <li><strong>我的孩子</strong>：查看孩子列表、添加孩子、查看详情、编辑信息、生成分享二维码、调整积分、管理等级设置</li>
+                <li><strong>孩子账号管理</strong>：创建/编辑/删除子账号</li>
+                <li><strong>礼物管理</strong>：创建礼物分组和单个礼物</li>
+                <li><strong>奖章管理</strong>：创建奖章组和单个奖章</li>
+                <li><strong>惊喜任务管理</strong>：创建隐藏性质的特殊任务</li>
+                <li><strong>理财产品管理</strong>：添加理财产品用于家庭银行</li>
+            </ul>
+
+            <h3 id="chap11">第十一章 成长屋——成长辅助工具箱</h3>
+            <h4>11.1 家庭银行</h4>
+            <blockquote>重要说明：家庭银行是一个完全独立于任务系统的子功能，与积分系统无关。家庭银行使用的是真实金额（元），而非积分。</blockquote>
+            <p><strong>资产概览</strong>：活期余额、定期总额、总资产</p>
+            <p><strong>操作功能</strong>：存入、支取、转定期、购买理财</p>
+            <p><strong>教育意义</strong>：储蓄意识、利息收益、理财启蒙、延迟满足</p>
+
+            <h4>11.2 成长相册</h4>
+            <p>记录孩子成长过程中的珍贵瞬间：按时间线展示照片，添加照片可获得积分奖励。</p>
+            <h4>11.3 计时器</h4>
+            <p>可独立使用，也可从任务卡片快速启动。支持全屏模式和悬浮窗模式，计时完成时播放提示音。</p>
+
+            <h3 id="chap12">第十二章 多孩管理与数据隔离</h3>
+            <p>APP中几乎所有功能都以孩子为维度进行数据分组：任务、习惯、计划、挑战、积分与等级、家庭银行、成长相册等均为每个孩子独立计算。</p>
+            <p>在创建礼物组、奖章组、任务组时，可以设置<strong>"授权给哪些孩子"</strong>，实现精准施策。通过生成孩子分享二维码，扫码可让多位家长共同管理同一孩子。</p>
+
+            <hr>
+
+            <h2 id="part4">第四篇 使用指南与总览</h2>
+
+            <h3 id="chap13">第十三章 家长与孩子端协同使用指南</h3>
+            <blockquote>推荐方案：微信小程序 + 安卓APP 双端协同。家长手机（微信小程序）创建任务、设置奖励；孩子使用安卓APP查看任务、完成任务。</blockquote>
+
+            <h4>典型使用场景</h4>
+            <ul>
+                <li><strong>日常任务管理</strong>：家长创建任务 → 孩子查看执行 → 提交完成 → 家长点评</li>
+                <li><strong>计划自动生成任务</strong>：家长创建计划 → 系统自动生成 → 孩子自主安排时间</li>
+                <li><strong>目标考核与结算</strong>：家长设置周目标 → 孩子每日努力 → 系统自动结算</li>
+                <li><strong>奖章领取与荣誉认可</strong>：家长创建奖章 → 孩子达成条件 → 领取获得积分+荣誉</li>
+                <li><strong>积分消费</strong>：家长设置礼物 → 孩子积累积分 → 兑换礼物</li>
+                <li><strong>家庭银行</strong>：家长存入压岁钱 → 孩子转定期 → 到期获得利息</li>
+            </ul>
+            <h4>青少年模式兼容性</h4>
+            <p>安卓APP设计为无内嵌浏览器、无社交功能的纯净应用，可安全加入各品牌手机的"青少年模式"白名单。</p>
+
+
+            <h3 id="chap15">第十四章 功能速查表</h3>
+            <table>
+                <thead><tr><th>功能</th><th>入口位置</th><th>主要操作者</th><th>说明</th></tr></thead>
+                <tbody>
+                    <tr><td>创建计划</td><td>首页快速添加 / 我的→计划</td><td>家长</td><td>长期规则设定，每天自动生成任务</td></tr>
+                    <tr><td>完成任务</td><td>任务墙</td><td>孩子</td><td>设置开始时间，提交完成详情</td></tr>
+                    <tr><td>任务点评</td><td>任务墙</td><td>家长</td><td>给予评价和积分奖励</td></tr>
+                    <tr><td>设置目标</td><td>首页→设置目标</td><td>家长</td><td>周/月目标，自动统计结算</td></tr>
+                    <tr><td>习惯打卡</td><td>首页快速添加</td><td>家长创建，孩子打卡</td><td>简单打卡，不限时间</td></tr>
+                    <tr><td>完成挑战</td><td>首页快速添加</td><td>家长创建，孩子完成</td><td>阶段性目标突破</td></tr>
+                    <tr><td>领取奖章</td><td>首页→领奖章</td><td>孩子</td><td>领取后获得积分+荣誉</td></tr>
+                    <tr><td>兑换礼物</td><td>首页→兑礼物</td><td>孩子</td><td>消耗积分兑换</td></tr>
+                    <tr><td>家庭银行</td><td>成长屋</td><td>家长存入，孩子理财</td><td>与积分系统无关</td></tr>
+                    <tr><td>成长相册</td><td>成长屋</td><td>家长/孩子</td><td>记录成长瞬间，获得积分</td></tr>
+                    <tr><td>计时器</td><td>成长屋 / 任务卡片</td><td>孩子</td><td>全屏或悬浮窗模式</td></tr>
+                    <tr><td>孩子管理</td><td>我的→我的孩子</td><td>家长</td><td>添加孩子、调整积分、等级设置</td></tr>
+                    <tr><td>孩子账号</td><td>我的→孩子账号</td><td>家长</td><td>创建子账号供孩子端登录</td></tr>
+                    <tr><td>理财产品</td><td>我的→理财产品</td><td>家长</td><td>设置理财产品用于家庭银行</td></tr>
+                </tbody>
+            </table>
+
+            <h3 id="chap16">第十五章 温馨提示</h3>
+            <h4>15.1 关于数据安全</h4>
+            <p>所有数据均由家长全权掌控，APP不介入任何第三方数据共享。家长可随时查看、修改、删除任何数据。所有的数据，都掌握在您自己手中。</p>
+
+            <div class="summary-box text-center">
+                <p class="text-lg font-semibold text-dark mb-2">孩子更自律，亲子更愉悦。</p>
+                <p>愿每一棵小树苗，都能在您的用心灌溉下，茁壮成长。</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="py-12 px-6 bg-primary text-white/80 text-center">
+        <p class="max-w-3xl mx-auto leading-relaxed mb-6">
+            来自一位父亲为女儿打造的专属成长工具，希望帮助更多孩子们更好的成长，所以我们将此APP公开。
+        </p>
+        <div class="flex flex-wrap justify-center gap-6 text-sm mb-6">
+            <a href="index.html" class="hover:text-white transition">首页</a>
+            <a href="faq.html" class="hover:text-white transition">常见问题</a>
+            <a href="manual.html" class="hover:text-white transition">使用说明</a>
+            <a href="install.html" class="hover:text-white transition">安装教程</a>
+            <a href="blog.html" class="hover:text-white transition">育儿博客</a>
+            <a href="mailto:nice24@qq.com" class="hover:text-white transition">联系我们</a>
+        </div>
+        <p>© 2026 大树的梦想 · 小树苗成长（原小树苗自律成长助手）</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm text-white/60 mt-2">
+            <span>ICP备案号：蜀ICP备2026014202号-1</span>
+            <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51012202002327" rel="nofollow noopener noreferrer" target="_blank" class="flex items-center gap-1">
+                <img src="备案图标.png" alt="网安备案图标" loading="lazy" class="w-4 h-4">
+                川公网安备51012202002327号
+            </a>
+        </div>
+    </footer>
+
+    <script>
+    (function(){
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+</body>
+</html>
